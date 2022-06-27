@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent{
+    margin: 26px;
+    height: 92vh;
+    box-shadow: #000 -1px 5px 16px;
+    /*
+    background-image: url('../img/RDBMS.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: 60px;
+    background-position-y: -60px;
+    */
+}
+.parent .child1{
+    width: 32%;
+    position: relative;
+}
+.parent .child1 .profile{
+    width: 78%;
+    position: relative;
+}
+.parent .child1 .profile::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 520px;
+    background-color: #000;
+    left: 360px;
+    top: 65px;
+}
+.parent .child1 .profile .profile-img img{
+    width: 240px;
+    height: 300px;
+    margin: 20px;
+    margin-left: 63px;
+    border: 1px solid #000;
+    box-shadow: rgb(5, 5, 131) -1px 5px 10px;
+}
+.parent .child1 .profile .profile-info{
+    text-align: center;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+.parent .child1 .profile .profile-info h3{
+    font-size: 18px;
+}
+.parent .child1 .profile .profile-info h3 span{
+    font-weight: lighter;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.parent .child1 .profile .profile-info p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.parent .child1 .profile .skills{
+    margin: 25px;
+}
+.parent .child1 .profile .skills ul{
+    background-color: rgba(97, 94, 80, 0.384);
+    padding: 5px;
+}
+.parent .child1 .profile .skills ul li{
+    list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.parent .child1 .profile .skills ul::before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 72px;
+    background-color: rgb(0, 0, 0);
+    left: 0px;
+}
+.parent .child1 .profile .social-media ul{
+    display: flex;
+    margin-left: 100px;
+}
+.parent .child1 .profile .social-media ul li{
+    list-style: none;
+    margin-right: 10px;
+}
+.parent .child1 .profile .social-media ul li a i{
+    font-size: 18px;
+    border: 1px solid;
+    /*border-radius: 50%;
+    */padding: 5px;
+    color: #000;
+    transition: all 1s;
+}
+.parent .child1 .profile .social-media ul li a i:hover{
+    color: #fff;
+    background-color: #000;
+    transform: translateY(-8px);
+}
+.parent button{
+    position: absolute;
+    top: 50%;
+    left:970px;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
